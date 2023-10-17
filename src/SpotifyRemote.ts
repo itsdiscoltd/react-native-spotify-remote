@@ -94,6 +94,21 @@ export interface SpotifyRemoteApi extends TypedEventEmitter<SpotifyRemoteEvents>
     connect(accessToken: string): Promise<void>;
 
     /**
+     * Connect to Spotify Application via the access token
+     *
+     * @param {string} accessToken
+     * @param {string} clientId
+     * @param {string} redirectUri
+     * @returns {Promise<void>}
+     * @memberof SpotifyRemoteApi
+     */
+    connectWithoutAuth(
+     accessToken: string,
+     clientId: string,
+     redirectUri: string
+     ): Promise<void>;
+
+    /**
      * Disconnects the App Remote 
      *
      * @returns {Promise<void>}
@@ -268,6 +283,7 @@ const eventListeners: Record<
 const SpotifyRemote: SpotifyRemoteApi = {
     // Native APIs
     connect: nativeModule.connect.bind(nativeModule),
+    connectWithoutAuth: nativeModule.connectWithoutAuth.bind(nativeModule),
     disconnect: nativeModule.disconnect.bind(nativeModule),
     getChildrenOfItem: nativeModule.getChildrenOfItem.bind(nativeModule),
     getContentItemForUri: nativeModule.getContentItemForUri.bind(nativeModule),
