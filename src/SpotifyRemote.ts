@@ -283,7 +283,7 @@ const eventListeners: Record<
 const SpotifyRemote: SpotifyRemoteApi = {
     // Native APIs
     connect: nativeModule.connect.bind(nativeModule),
-    connectWithoutAuth: nativeModule.connectWithoutAuth.bind(nativeModule),
+    connectWithoutAuth: nativeModule.connectWithoutAuth ? nativeModule.connectWithoutAuth.bind(nativeModule) : null,
     disconnect: nativeModule.disconnect.bind(nativeModule),
     getChildrenOfItem: nativeModule.getChildrenOfItem.bind(nativeModule),
     getContentItemForUri: nativeModule.getContentItemForUri.bind(nativeModule),
