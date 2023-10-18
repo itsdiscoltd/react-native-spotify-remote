@@ -146,6 +146,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 58B511D21A9E6C8500147676;
@@ -281,7 +282,8 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/external/SpotifySDK/**",
+					"$(PROJECT_DIR)/external/SpotifySDK",
+					"$(PROJECT_DIR)/external/SpotifySDK/SpotifyiOS.framework",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -305,7 +307,8 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/external/SpotifySDK/**",
+					"$(PROJECT_DIR)/external/SpotifySDK",
+					"$(PROJECT_DIR)/external/SpotifySDK/SpotifyiOS.framework",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",

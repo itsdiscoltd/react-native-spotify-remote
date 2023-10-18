@@ -15,6 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// The secondary title of the item.
 @property (nonatomic, copy, readonly, nullable) NSString *subtitle;
 
+/// The description of the item.
+@property (nonatomic, copy, readonly, nullable) NSString *contentDescription;
+
 /// The unique identifier of the item.
 @property (nonatomic, copy, readonly) NSString *identifier;
 
