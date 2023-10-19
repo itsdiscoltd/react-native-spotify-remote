@@ -2,7 +2,7 @@
 #import "RNSpotifyRemoteAuth.h"
 #import <AVFoundation/AVFoundation.h>
 #import <React/RCTConvert.h>
-#import <SpotifyiOS/SpotifyiOS.h>
+#import <SpotifyiOS.h>
 #import "RNSpotifyRemoteConvert.h"
 #import "RNSpotifyItem.h"
 #import "RNSpotifyRemoteError.h"

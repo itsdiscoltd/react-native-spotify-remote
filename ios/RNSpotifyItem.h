@@ -6,7 +6,7 @@
 //  Copyright © 2018 Facebook. All rights reserved.
 //
 
-#import <SpotifyiOS/SpotifyiOS.h>
+#import <SpotifyiOS.h>
 
 #ifndef RNSpotifyItem_h
 #define RNSpotifyItem_h
