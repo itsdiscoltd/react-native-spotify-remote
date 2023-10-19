@@ -1,5 +1,5 @@
 #import <UIKit/UIKit.h>
-#import <SpotifyiOS.h>
+#import <SpotifyiOS/SpotifyiOS.h>
 #import <React/RCTBridgeModule.h>
 #import "RNSpotifyRemotePromise.h"
 
